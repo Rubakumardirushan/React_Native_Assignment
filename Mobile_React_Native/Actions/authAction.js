@@ -11,11 +11,11 @@ if(!(credentials.username ) && !(credentials.password)){
 }
 else if(!(credentials.password)){
     Alert.alert('Enter the password')
-    console.log("checks  password is null..?")
+    console.log("checks  password is null..")
 }
 else if(!(credentials.username)){
     Alert.alert('Enter the username')
-    console.log("checks username  is null..?")
+    console.log("checks username  is null..")
 }
 
   return async (dispatch) => {

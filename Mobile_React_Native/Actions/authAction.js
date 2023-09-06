@@ -39,8 +39,8 @@ if(token){
     }
     
     catch (error) {
-
-        Alert.alert('Incorrect Password or username')
+     if((credentials.username ) && (credentials.password)){
+        Alert.alert('Incorrect Password or username')}
       dispatch({ type: 'LOGIN_FAILURE', payload: { error: error.message } });
     }
   };

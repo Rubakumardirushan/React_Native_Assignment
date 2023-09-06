@@ -3,13 +3,17 @@ import { View, Text, FlatList, } from 'react-native';
 import { Button } from '@ant-design/react-native';
 import axios from 'axios';
 import { Card,  } from 'react-native-elements';
-
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchProducts } from '../Actions/productsActions';
 
 
 const About = ({navigation}) => {
-    const [products, setProducts] = useState([]);
+    const [product, setProducts] = useState([]);
+    const dispatch = useDispatch();
+    const products = useSelector((state) => state.products.products);
+    const error = useSelector((state) => state.products.error);
   
-    useEffect(() => {
+ /*   useEffect(() => {
       axios
         .get('https://fakestoreapi.com/products')
         .then((response) => {
@@ -19,7 +23,12 @@ const About = ({navigation}) => {
         .catch((error) => {
           console.error('Error fetching data:', error);
         });
-    }, []);
+    }, []);*/
+    useEffect(() => {
+      dispatch(fetchProducts());
+    }, [dispatch]);
+    setProducts(products);
+
   const sortpage=()=>{
     navigation.navigate('sortlist')
   }

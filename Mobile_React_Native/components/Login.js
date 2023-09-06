@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet ,TextInput} from 'react-native';
 import { WingBlank,Button } from '@ant-design/react-native';
-import axios from 'axios';
+
 import { useDispatch } from 'react-redux';
 import { login } from '../Actions/authAction';
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, FlatList, } from 'react-native';
 import { Button } from '@ant-design/react-native';
 import axios from 'axios';
-import { Card, ListItem } from 'react-native-elements';
+import { Card,  } from 'react-native-elements';
 
 
 

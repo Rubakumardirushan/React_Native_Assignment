@@ -55,13 +55,13 @@ const Limipage=()=>{
       <Text style={{ fontSize:20,marginTop:20 ,marginLeft:110}}>Enter Product ID:</Text>
       <TextInput
         style={{
-          borderColor: 'gray',
+          backgroundColor:'black',
           borderWidth: 1,
           marginBottom: 10,
           padding: 5,
           borderRadius:9,
           width:250,
-          marginLeft:60,
+          marginLeft:50,
         
         }}
         onChangeText={(text) => setProductId(text)}

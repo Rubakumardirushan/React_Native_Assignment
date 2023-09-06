@@ -21,7 +21,7 @@ const About = ({navigation}) => {
         });
     }, []);
   const sortpage=()=>{
-    navigation.navigate('sortlist')
+  //  navigation.navigate('sortlist')
   }
     const renderItem = ({ item }) => (
       <View style={{ marginTop:20 ,padding:10,backgroundColor: '#BECEE7',}}>

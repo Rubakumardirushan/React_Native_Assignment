@@ -6,7 +6,7 @@ import store from '../store';
 
 import Login from './Login';
 import About from './About';
-import Sort from './Sort ';
+import Sort from './Sort';
 import Search from './Search';
 import Limit from './Limit';
 

@@ -50,7 +50,7 @@ const Login = ({ navigation }) =>{
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'black',
+    backgroundColor: '#6678BA',
     marginBottom:40,
     marginRight:20,
     marginLeft:20,
@@ -64,11 +64,13 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 50,
     fontWeight: 'bold',
-   marginLeft:32,
-   marginTop:155,
-   fontFamily:'Raleway'
+   marginLeft:30,
    
-
+   marginTop:155,
+   fontFamily:'Raleway',
+   color:'white',
+   borderColor: 'black',
+   
   },
   inputbox:{
     marginTop:30,
@@ -76,10 +78,12 @@ const styles = StyleSheet.create({
     marginRight:20,
     borderRadius: 35, 
     borderWidth: 2, 
-    borderColor: 'white',
+    borderColor: 'black',
     textAlign:'auto',
     fontSize:20,
-    padding:15
+    padding:15,
+     color:'black',
+     backgroundColor: 'white',
     
   },
   buttons:{

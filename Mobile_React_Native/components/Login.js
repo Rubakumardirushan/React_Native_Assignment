@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import { View, Text, StyleSheet ,TextInput} from 'react-native';
 import { WingBlank,Button } from '@ant-design/react-native';
 

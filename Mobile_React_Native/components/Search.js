@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 import { View, Text, TextInput,  FlatList ,Alert,StyleSheet} from 'react-native';
 import axios from 'axios';
 import { Button } from '@ant-design/react-native';
